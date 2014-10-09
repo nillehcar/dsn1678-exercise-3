@@ -1,7 +1,7 @@
 var sales = $('.sales');
 var salesDetails = $('.sales__details');
 
-var buttonClickHandler = function () {
+var salesClickleft = function () {
 	var currentState = salesDetails.attr('data-state');
 	if (currentState == 'active') {
 		salesDetails.attr('data-state', 'inactive');
@@ -11,12 +11,12 @@ var buttonClickHandler = function () {
 
 };
 
-sales.on('click', buttonClickHandler);
+sales.on('click', salesClickleft);
 
 var salesRight = $('.sales-right');
 var salesDetailsRight = $('.sales__details-right');
 
-var buttonClickHandler = function () {
+var salesClickright = function () {
 	var currentState = salesDetailsRight.attr('data-state');
 	if (currentState == 'active') {
 		salesDetailsRight.attr('data-state', 'inactive');
@@ -26,5 +26,5 @@ var buttonClickHandler = function () {
 
 };
 
-salesRight.on('click', buttonClickHandler);
+salesRight.on('click', salesClickright);
 
